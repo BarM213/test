@@ -1,0 +1,81 @@
+﻿div.story
+{
+   height: 100%;
+   width: 100%;
+   padding-bottom: 150px;
+
+}
+
+img#img1
+ {
+    width: 300px;
+    height: 300px;
+    top: 120px;
+    padding-left: 10px;
+
+
+ }
+ img#img2
+ {
+    width: 300px;
+    height: 300px;
+    top: 420px;
+    padding-top: 50px;
+    float: right;
+    padding-left: 10px;
+
+
+ }
+
+ h1
+ {
+    font-size: 40px;
+    padding-top: 10px;
+ }
+ h2
+ {
+   font-size: 25px;
+   
+ }
+ h2#secH
+ {
+   top: 430px;
+   padding-top: 50px;
+ }
+ section#secP
+ {
+   font-size: 20px;
+   right: 310px;
+   padding: 5px;
+   top: 150px; 
+ }
+ section#firstP
+ {
+   font-size: 20px;
+ }
+ #pOne,#pTwo
+ {
+   display: inline-block;
+ }
+
+ .paragraph {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: wrap;
+ }
+
+ .content {
+    width: 70%;
+  }
+
+ @media screen and (max-width: 1035px) {
+  .content {
+    width: 90%;
+  }
+  .paragraph {
+    text-align: center;
+    justify-content: center;
+  }
+ }

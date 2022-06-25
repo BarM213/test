@@ -1,0 +1,165 @@
+﻿article
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 170px;
+}
+#logo
+{
+    width: 350px;
+    height: 200px;
+}
+ul
+{
+    list-style: none;
+    padding: 10px 0px 10px 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.galleryContainer1 {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    border: 5px solid;
+    border-color: rgb(95, 95, 95);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor1 {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+
+.prev1,
+.next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 16px 16px 0;
+    user-select: none;
+    text-decoration: none;
+    background-color: rgba(203, 202, 202, 0.2);
+}
+
+
+/* posistion the buttons */
+
+.next1 {
+    left: 0;
+    border-radius: 16px 0 0 16px;
+}
+
+.prev1
+{
+    right: 0;
+    
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev1:hover,
+.next1:hover {
+    background-color: rgba(203, 202, 202, 0.8);
+}
+
+
+/* Number text (css) */
+
+.numbertext1 {
+    color: #f2f2f2;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: 45%;
+}
+
+
+/* Container for image text */
+
+.caption-container1 {
+    text-align: center;
+    height: 35px;
+    padding-top: 5px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(196, 196, 196, 1) 10%, rgba(101, 101, 101, 1) 40%, rgba(101, 101, 101, 1) 60%, rgba(196, 196, 196, 1) 90%, rgba(255, 255, 255, 1) 100%);
+    color: white;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* five columns side by side */
+
+.column1 {
+    float: left;
+    width: 20%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo1 {
+    opacity: 0.6;
+}
+
+.active,
+.demo1:hover {
+    opacity: 1;
+}
+
+.headshot {
+    flex-shrink: 0;
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(165, 41, 41, 0.5);
+}
+
+.headshot-1 {
+    background-image: var(--img-url), linear-gradient(#f9f047, #0fd850);
+}
+
+.row1
+{
+    display:flex;
+}

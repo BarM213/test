@@ -1,0 +1,44 @@
+﻿#mapList
+{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 120px;
+    
+}
+#mapList li
+{
+    list-style: none;
+}
+div > h1
+{
+    font-size: 40px;
+    margin-right: 20px;
+}
+div .topMap
+{
+    font-size: 25px;
+    border-bottom: 2px solid rgb(102, 102, 102);
+    padding : 5px;
+
+
+}
+div .downMap
+{
+    font-size: 20px;
+    padding:7px 0px;
+    list-style:circle;
+}
+.disLink
+{
+    color: rgb(70, 68, 68);
+    cursor:not-allowed;
+}
+#mapList a
+{
+    text-decoration: none;
+    color: black;
+}
+#mapList .enLink
+{
+    text-decoration:underline;
+}

@@ -1,0 +1,42 @@
+﻿
+#contectForm
+{
+    padding-bottom: 120px;
+}
+#contectForm form
+{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(174, 174, 184);
+    position: relative;
+    right:25%;
+    border: 2px solid black;
+    opacity: 85%;
+
+
+}
+#contectForm label
+{
+    margin: 5px;
+}
+.required
+{
+    color: rgb(241, 60, 60);
+}
+.myForm
+{
+    margin: 5px;
+    text-align: center;
+}
+textarea.myForm
+{
+    resize: none;
+    height: 100px;
+    width: 200px;
+}
+form>h1
+{
+    text-decoration-line: underline;
+    font-size: 20px;
+    font-family: monospace;
+}

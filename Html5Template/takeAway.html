@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>סל קניות - איסוף</title>
+    <meta name="description" content="the way to make pickUp order" />
+    <meta name="keywords" content="pickUp, order,online order" />
+    <meta name="author" content="Bar Moyal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/takeAwayCss.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="../Html5Template/images/logoPero.jpeg">
+
+</head>
+<body>
+    <div id="container">
+        
+
+        <header> <!--חלק עליון של האתר-->
+
+            <nav id="headNav">
+                <ul id="Tafrit">
+                    <li class="firstNav" ><a href="../Html5Template/index.html"> דף בית </a> </li>
+                    <li class="firstNav">
+                        <a href="" class="unAvlink">
+                        מוצרים
+                        </a>
+                        <ul id="products" class="inner-list">
+                            <li class="secNav"> <a href="" class="unAvlink"> צבעים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink" >אינסטלציה </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> בנייה </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> כלים שימושיים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> מכשור לגינה </a> </li>
+                        </ul>
+                    </li>
+                    <li class="firstNav">
+                        <a href="" class="unAvlink" >
+                        אנשי מקצוע
+                        </a>
+                        <ul id="people" class="inner-list">
+                            <li class="secNav"> <a href="" class="unAvlink"> אינסטלטורים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> צבעים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> חשמלאים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> טכנאים </a> </li>
+                        </ul>
+                    </li>
+                    <li class="firstNav" > <a href="../Html5Template/storyTell.html"> סיפור החנות </a> </li>
+                    <li class="firstNav" id="currentPage">
+                        <a href="">
+                        סל קניות
+                        </a>
+                        <ul id="basket" class="inner-list">
+                            <li class="secNav" id="currentPage"> <a href="#takeAway"> איסוף </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> משלוח </a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <h1>
+            בחר את המוצרים שברצונך להזמין
+        </h1>
+        <form>
+        <h2>
+            <input type="checkbox" id="selectAll" onclick="toggle(this)"/>
+            בחר את כל המוצרים 
+        </h2>
+
+        <table >
+            <tr>
+                <td>
+                    8 סוללות AAA 
+                    <br/>
+                    20 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/batteries.jpeg" alt="סוללות">
+                    <br/>
+                    <input type="checkbox" id="batteries" class="products" onclick="turnOff(this)" >הוסף לסל
+                </td>
+                <td>
+                    חבילת ברגים 100 י״ח
+                    <br/>
+                    8 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/bragim.jpeg" alt="חבילת 100 ברגים" >
+                    <br/>
+                    <input type="checkbox" id="bragim" class="products" onclick="turnOff(this)">הוסף לסל
+                    
+                </td>
+                <td>
+                    כבל מאריך 25 מטר
+                    <br/>
+                    180 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/cabel.jpeg" alt="כבל מאריך">
+                    <br/>
+                    <input type="checkbox" id="cabel" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    צבע לדק מעץ
+                    <br/>
+                    90 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/deckPaint.jpeg" alt="צבע לדק מעץ">
+                    <br/>
+                    <input type="checkbox" id="deckPaint" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    צבע זהב למתכת ועץ
+                    <br/>
+                    75 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/goldPaint.jpeg" alt="צבע זהב לצביעה">
+                    <br/>
+                    <input type="checkbox" id="goldPaint" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    צבע כסוף מגנטי
+                    <br/>
+                    30 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/magneticPaint.jpeg" alt="צבע מגנטי">
+                    <br/>
+                    <input type="checkbox" id="goldPaint" class="products" onclick="turnOff(this)">הוסף לסל
+
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    מפוח לגינה
+                    <br/>
+                    179.90 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/mapuah.jpeg" alt="מפוח גינה">
+                    <br/>
+                    <input type="checkbox" id="mapuah" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    מסור חשמלי
+                    <br/>
+                    340 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/masor.jpeg" alt="מסור חשמלי">
+                    <br/>
+                    <input type="checkbox" id="masor" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    מברגה - חברת בוש
+                    <br/>
+                    98.90 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/mavrega_blue.jpeg" alt="מברגה של חברת בוש">
+                    <br/>
+                    <input type="checkbox" id="mavrega_blue" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    מברגה - חברת אינקו
+                    <br/>
+                    150 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/mavrega_yellow.jpeg" alt="מברגה של חברת אינקו">
+                    <br/>
+                    <input type="checkbox" id="mavrega_yellow" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    פטישון
+                    <br/>
+                    399.90 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/patishon.jpeg" alt="פטישון">
+                    <br/>
+                    <input type="checkbox" id="patishon" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+                <td>
+                    צבע לבן לקיר - טמבור
+                    <br/>
+                    90 ש״ח
+                    <br/>
+                    <img src="../Html5Template/images/items/tamburWhite.jpeg" alt="צבע לבן לקיר - טמבור">
+                    <br/>
+                    <input type="checkbox" id="tamburWhite" class="products" onclick="turnOff(this)">הוסף לסל
+                </td>
+            </tr>
+        </table>
+
+        <div class="info">
+            <span class="required">*</span>
+            שם :
+            <label for="name">
+                <input type="text" id="name" value="הכנס שם" required>
+            </label>
+            <span class="required">*</span>
+            טלפון :
+            <label for="phone">
+                <input type="text" id="phone" value="הכנס טלפון" required>
+            </label>
+            <span class="required">*</span>
+            אי-מייל : 
+            <label for="email" >
+                <input type="email" id="email" name="email" placeholder="הכנס כתובת מייל" required>
+            </label>
+            <br>
+            <span class="required">*</span>
+            תאריך לאיסוף :
+            <label for="date">
+                <input type="date" id="date" name="date" min="2022-06-25" required>
+            </label>
+            <span class="required">*</span>
+            שעה לאיסוף :
+            <label for="time">
+                <input type="time" id="time" name="time" max="20:00" required>
+            </label>
+            <label for="submit">
+                <input type="submit" id="submin" name="submit" value="אישור">
+            </label>
+        </div>
+       
+        <script src="jScripts/myJava.js"></script> <!--js file for the products-->
+
+        </form>
+
+        <footer>
+
+            <nav id="footNav">
+                <ul>
+                    <li> <a href="../Html5Template/siteMap.html"> מפת אתר </a> </li>
+                    <li> <a href="../Html5Template/contactUs.html"> צור קשר </a> </li>
+                    <li> <a href="../Html5Template/about.html"> אודות </a> </li>
+                </ul>
+            </nav>
+
+            <p id="zchoyot"> Ⓒ כל הזכויות שמורות לפרו וולט</p>
+
+        </footer>
+
+    </div>
+
+
+</body>
+</html>

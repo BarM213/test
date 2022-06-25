@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title> צור קשר </title>
+    <meta name="description" content="contect us form to talk with the author" />
+    <meta name="keywords" content=" contect, form, phonecall, talking " />
+    <meta name="author" content=" Bar Moyal " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="styles/contactCss.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="../Html5Template/images/logoPero.jpeg">
+
+
+</head>
+<body>
+    <div id="container">
+       
+        <header> <!--חלק עליון של האתר-->
+
+            <nav id="headNav">
+                <ul id="Tafrit">
+                    <li class="firstNav"><a href="../Html5Template/index.html"> דף בית </a> </li>
+                    <li class="firstNav">
+                        <a href="" class="unAvlink">
+                        מוצרים
+                        </a>
+                        <ul id="products" class="inner-list">
+                            <li class="secNav"> <a href="" class="unAvlink"> צבעים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink" >אינסטלציה </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> בנייה </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> כלים שימושיים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> מכשור לגינה </a> </li>
+                        </ul>
+                    </li>
+                    <li class="firstNav">
+                        <a href="" class="unAvlink" >
+                        אנשי מקצוע
+                        </a>
+                        <ul id="people" class="inner-list">
+                            <li class="secNav"> <a href="" class="unAvlink"> אינסטלטורים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> צבעים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> חשמלאים </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> טכנאים </a> </li>
+                        </ul>
+                    </li>
+                    <li class="firstNav"> <a href="../Html5Template/storyTell.html"> סיפור החנות </a> </li>
+                    <li class="firstNav">
+                        <a href="">
+                        סל קניות
+                        </a>
+                        <ul id="basket" class="inner-list">
+                            <li class="secNav"> <a href="../Html5Template/takeAway.html"> איסוף </a> </li>
+                            <li class="secNav"> <a href="" class="unAvlink"> משלוח </a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        
+
+        <div id="contectForm">
+            <form class="myForm">
+                <h1>צור קשר</h1>
+                <br/>
+                <label for="titleMsg" class="myForm">
+                    נושא הפנייה  <span class="required">*</span>
+                    <br/>
+                    <select id="titleMsg" class="myForm" required>
+                        <option value="1"> הצטרפות לאנשי מקצוע </option>
+                        <option value="2"> בקשה למוצר מיוחד </option>
+                        <option value="3"> תקלה באתר </option>
+                        <option value="4"> הצטרפות לצוות העובדים </option>
+                        <option value="5" selected > נושאים אחרים </option>
+                    </select>
+                </label>
+                <br/>
+                <label for="msgIn" class="myForm" >
+                    תוכן הפנייה <span class="required">*</span>
+                    <br/>
+                    <textarea class="myForm" name="msg" id="msgIn" placeholder="הכנס הודעה כאן.." required></textarea>
+                </label>
+                <br/>
+                <h1>פרטים לחזרה</h1>
+                <br/>
+                <label for="firstName" class="myForm">
+                    שם פרטי <span class="required">*</span>
+                    <br/>
+                    <input class="myForm" type="text" id="firstName" placeholder="הכנס שם פרטי" required>
+                </label>
+                <br/>
+                <label for="lastName" class="myForm">
+                    שם משפחה <span class="required">*</span>
+                    <br/>
+                    <input class="myForm" type="text" id="lastName" placeholder="הכנס שם משפחה" required>
+                </label>
+                <br/>
+                <label for="gender" class="myForm">
+                    מין: 
+                    <input type="radio" name="gender"> זכר
+                    <input type="radio" name="gender">נקבה
+                    <input type="radio" name="gender">אחר
+                </label>
+                <br/>
+                <label for="email" class="myForm">
+                    כתובת מייל <span class="required">*</span>
+                    <br/>
+                    <input class="myForm" type="email" id="email" name="email" placeholder="הכנס כתובת מייל" required>
+                </label>
+                <br/>
+                <label for="phoneNum" class="myForm">
+                    טלפון <span class="required">*</span>
+                    <br/>
+                    <input class="myForm" type="tel" id="phoneNum" name="phoneNum" placeholder="052-555555555" required>
+                </label>
+                <br/>
+                <label for="check" class="myForm">
+                    <input type="checkbox" id="check">
+                    שלח מסרון עדכון בנוגע לפנייה
+                </label>
+                <br/>
+                <label for="send" class="myForm">
+                    <input type="submit" value=" שלח" id="send" class="myForm">
+                </label>
+            </form>
+        </div>
+
+        <footer>
+
+            <nav id="footNav">
+                <ul>
+                    <li> <a href="../Html5Template/siteMap.html"> מפת אתר </a> </li>
+                    <li id="currentFoot"> <a href="../Html5Template/contactUs.html"> צור קשר </a> </li>
+                    <li> <a href="../Html5Template/about.html"> אודות </a> </li>
+                </ul>
+            </nav>
+
+            <p id="zchoyot"> Ⓒ כל הזכויות שמורות לפרו וולט</p>
+
+        </footer>
+
+
+    </div>
+</body>
+</html>
